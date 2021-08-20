@@ -1,0 +1,159 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="https://www.dropbox.com/s/trsldt0me90jzs8/resume.css"/>
+        <title></title>
+    </head>
+<body>
+    <div id="header">
+    <p id="name">Akinrinlola Abidemi OLUKA</p>
+         <a href="mailto:akinoluka@gmail.com" target="_blank"><p id="email">akinoluka@gmail.com</p></a>
+     </div>
+     <div class="left">
+     </div>
+     <div class="right">
+            <h3>CV Highlights</h3>
+            <p>
+            <ul>
+                <li>Currently going through CS253 – Web Application Engineering and CS61A – Structure & Interpretation of Computer Programs</li>
+                <li>Learnt basic Python, JavaScript, HTML, CSS on Codecademy.com.</li>
+                <li>An independent, dedicated, efficient person. These attributes are proved through the series of courses I have taken or I am taking as of now independently through online platforms.</li>
+                <li>Good Communication Skills, Presentation Skills, attitude towards leadership, authorisation and delegation, conflict resolution and negotiation and a very good team worker.</li>
+            </ul>
+            </p>
+
+            <h3>Professional Experience</h3>
+            <h4 id="company-name">Delivearly Logistics (June 2020 - Present) </h4>
+            <p id="job-title"><strong>Operatios Manager (Technical Support)</strong></p>
+            <p id="job-responsibilities">Job Responsbilities</p>
+            <p>
+            <ul>
+                <li>Planning and managing logistics, transportation and customer services</li>
+                <li>Liaising and negotiating with suppliers, retailers and consumers</li>
+                <li>Resolve any arising problems or complaints</li>
+                <li>Contribute ideas to the team on how customers can be delighted</li>
+                <li>Maintain metrics and analyze data to assess performance and implement improvements</li>
+                <li>Collaborate with IT professionals to implement effective system </li>
+            </ul>
+            </p>
+
+            <h4 id="company-name">COVEN LABS, Lagos, Nigeria (May 2016 – May 2020)  </h4>
+            <p id="job-title"><strong>Trainee and Data Science Instructor</strong></p>
+            <p id="job-responsibilities">Job Responsbilities</p>
+            <p>
+            <ul>
+                <li>Learnt about the basics of statistics and linear algebra and its application in data science and AI and was introduced to python and its application in data science and AI</li>
+                <li>Conduct and take classes for new intakes.</li>
+            </ul>
+            </p>
+        
+
+            <h4 id="company-name">Paylater Inc. Victoria Island, Lagos (January 2019 – June 2019) </h4>
+            <p id="job-title"><strong>Data Scientist (Freelance)</strong></p>
+            <p id="job-responsibilities">Job Responsbilities</p>
+            <p>
+            <ul>
+                <li>Conducted data mining and data modeling in coordination with loan management</li>
+                <li>Developed reports using SQL and Google Data studio to examine clients’ retention and bill payment</li>
+                <li>Helped in querying customers data using SQL</li>
+                <li>Used unsupervised learning techniques (PCA, Clustering) to segment clients into various loan groups</li>
+                <li>Analyzing and proffering solutions to customers’ data related problems</li>
+            </ul>
+            </p>
+
+
+            <h3>Educational Qualifications</h3>
+            <table>
+                <!-- <tr id="heading">
+                    <td>Qualification</td>
+                    <td>Board</td>
+                    <td>Percentage / Grades</td>
+                    <td>Year</td>
+                </tr> -->
+                <tr>
+                    <td>FEDERAL UNIVERSITY OF TECHNOLOGY AKURE</td>
+                    <td>B.Eng.</td>
+                    <td>Metallurgical and Materials Engineering</td>
+                    <td>December 2014</td>
+                </tr>
+            </table>
+
+            
+            <h3>Independent Courses</h3>
+            <p>
+            <ul>
+                <li>
+                <span id="course-name">HTML & CSS for Beginners – Web Fundamentals</span> – Codecademy.com</li>
+                <li>
+                <span id="course-name">Python – Fundamentals and Dynamic Programming </span> - Codecademy.com</li>
+                <li>
+                <span id="course-name">CS101: Introduction to Computer Science - Building a Web Crawler</span> - Udacity.com</li>
+                <li>
+                <span id="course-name">CS50x – Introduction to Computer Science I</span> – edX.org & Harvard University</li>
+                <li>
+                <span id="course-name">Calculus One</span> - Ohio State University & Coursera.org</li>
+                <li>
+                <span id="course-name">Introduction to Finance</span> - Coursera.org & University of Michigan</li>
+            </ul>
+            <h3>Technical Skills</h3>
+            <p>
+            <ul>
+                <li>
+                <span id="course-name">Operating Systems:</span> Windows, Mac, Linux (Ubuntu, Kali)</li>
+
+                <li>
+                <span id="course-name">Programming Skills:</span>HTML, CSS, Python, learning JavaScript, C and C++</li></ul>
+            </p>
+            
+
+
+            <header>
+
+                <h3> Contact us </h3>
+            </header>
+            
+            <div class="container">
+                <form action="" method="POST" class="contact-form">
+                    {% csrf_token %}
+                <div class="form-control">
+                    <div class="tag"> Full Name </div>
+                    <input type="text" name="full-name">
+                </div>
+                <div class="form-control">
+                    <div class="tag"> Email </div>
+                    <input type="text" name="email">
+                </div>
+                <div class="form-control">
+                    <div class="tag"> Subject </div>
+                    <input type="text" name="subject">
+                </div>
+                <div class="form-control">
+                    <div class="tag"> Message </div>
+                    <textarea name="message" cols="30" rows="10"> </textarea>
+                </div>
+                <div class="form-control">
+                    <input type="submit" class="btn submit-btn" value="Send Message">
+                </div>
+
+                </form>
+         
+            </div>
+     </div>
+
+     
+
+
+     <div id="footer"></div>
+    </body>
+</html>
+
+
+
+
+
+{% endblock content %}
